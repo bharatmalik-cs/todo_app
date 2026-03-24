@@ -30,7 +30,7 @@ function App() {
     <div>
       <button onClick={addTodo}>Add a todo</button>
       {todo.map(todo  => 
-        <Todo key = {todo.id} title={todo.title} description={todo.description}></Todo>
+        (<Todo key = {todo.id} title={todo.title} description={todo.description}></Todo>)
       )}
       
     </div>
